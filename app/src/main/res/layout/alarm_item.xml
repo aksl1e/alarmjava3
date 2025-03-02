@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <!-- Alarm Time & Name -->
+    <TextView
+        android:id="@+id/tv_alarm_time_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:text="07:30 AM"
+        android:textStyle="bold"/>
+
+    <!-- Repeat Weekly Checkbox -->
+    <TextView
+        android:id="@+id/tv_repeat_weekly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Powtarzaj co tydzień"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- Days of the Week -->
+        <TextView
+            android:id="@+id/tv_days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pon, Wt, Śr, Czw, Pt"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_alignParentStart="true"/>
+
+        <!-- Volume Level -->
+        <TextView
+            android:id="@+id/tv_volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Głośność: 80%"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</LinearLayout>
