@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                     if (result.getResultCode() == Activity.RESULT_OK) {
                         Intent data = result.getData();
                         if (data != null) {
-                            Alarm newAlarm = data.getParcelableExtra("new_alarm"); // Or use Parcelable
+                            Alarm newAlarm = data.getParcelableExtra("new_alarm");
                             if (newAlarm != null) {
                                 alarmList.add(newAlarm);
                                 alarmAdapter.notifyDataSetChanged();
